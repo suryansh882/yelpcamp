@@ -1,0 +1,33 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="row">
+        <div style="width: 25rem;">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form class="form-signin" action="/login" method="POST">
+                        <h1 class="h3 mb-3 font-weight-normal text-center">Login</h1>
+                        
+                        <div class="mb-3">
+                            <label class="form-label" for="inputUsername">Username</label>
+                            <input type="text" id="inputUsername" class="form-control" name="username" placeholder="Username" required autofocus>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+                        </div>
+                                        
+                        <button class="btn btn-lg btn-success btn-block" type="submit">Login</button>
+                    </form>
+                    <div class="form-signin text-center">
+                      <span>Don't have an account? </span> <a href="/register">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('./partials/footer.ejs') %>

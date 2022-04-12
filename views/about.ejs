@@ -1,0 +1,64 @@
+<%- include('./partials/header.ejs') %>
+
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-12 col-md-9">
+        <div class="card shadow border-0 ">
+          <div class="card-body">
+            <h1 class="text-center">About YelpCamp</h1>
+            <h3>What is YelpCamp?</h3>
+            <hr>
+            <p>
+              <strong class="text-danger">YelpCamp</strong> is a campground reviewing website. Users can create their own campgrounds or review others' campgrounds. To get started, simply
+              <a href="/register">sign up</a>.
+            </p>
+            <p>
+              This is a project for a web dev course taught by Colt Steele. YelpCamp was created using Node.js, Express, and MongoDB.
+            </p>
+            <h3>Features</h3>
+            <hr>
+            <ul>
+                <li>Authentication
+                    <ul>
+                        <li>User login with username and password</li>
+                        <li>Admin sign-up with admin code</li>
+                    </ul>
+                </li>
+                <li>Authorization
+                    <ul>
+                        <li>User cannot manage posts without being authenticated</li>
+                        <li>User cannot edit or delete posts and comments created by other users</li>
+                        <li>Admin can manage all posts and comments</li>
+                    </ul>
+                </li>
+                <li>Manage campground posts
+                    <ul>
+                        <li>User can create, edit and delete posts and comments</li>
+                        <li>User can search existing campgrounds by name</li>
+                    </ul>
+                </li>
+                <li>Flash messages responding to users' interaction with the app</li>
+                <li>Responsive web design</li>
+            </ul>
+            <!-- <ul>
+                <li>Users can create, edit, and remove campgrounds</li>
+                <li>Users can comment on other campgrounds and edit and delete them</li>
+                <li>Search campground by name</li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<%- include('./partials/footer.ejs') %>
